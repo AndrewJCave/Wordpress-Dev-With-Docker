@@ -4,7 +4,6 @@ services:
    db:
      image: mysql:5.7
      volumes:
-       # - db_data:/Users/andrew/Projects/docker/volumes/mysql
        - ./mysql:/var/lib/mysql
      restart: always
      environment:
@@ -27,5 +26,3 @@ services:
      ports:
        - "8000:80"
        
-#volumes:
-#    db_data:
